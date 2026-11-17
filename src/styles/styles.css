@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap');
+
+:root {
+  --color-bg: #f7f4ee;
+  --color-surface: #ffffff;
+  --color-border: #e4ded2;
+  --color-control-border: #c9c2b4;
+  --color-text: #1b2430;
+  --color-text-muted: #4a5565;
+  --color-accent: #1f4fa3;
+  --color-accent-soft: #e3ecfa;
+  --color-accent-line: #9db6e0;
+  --color-on-accent: #ffffff;
+  --color-success: #1e7a46;
+  --color-success-soft: #e3f3e8;
+  --color-notice-soft: #fff6e5;
+  --color-notice-line: #ebc98b;
+  --color-warm: #b45309;
+  --color-pad-red: #c2412d;
+  --color-pad-blue: #1f4fa3;
+  --color-pad-green: #1e7a46;
+  --color-pad-yellow: #e0a21b;
+
+  --font-family: 'Atkinson Hyperlegible Next', system-ui, sans-serif;
+  --text-display: 700 2.75rem/3.25rem var(--font-family); /* 44/52 */
+  --text-title: 700 2rem/2.5rem var(--font-family); /* 32/40 */
+  --text-heading: 700 1.625rem/2.125rem var(--font-family); /* 26/34 */
+  --text-body: 400 1.5rem/2.125rem var(--font-family); /* 24/34 */
+  --text-label: 700 1.375rem/1.75rem var(--font-family); /* 22/28 */
+  --text-caption: 400 1.125rem/1.625rem var(--font-family); /* 18/26 */
+
+  --radius-button: 1rem; /* 16 */
+  --radius-card: 1.25rem; /* 20 */
+  --radius-large: 1.5rem; /* 24 */
+  --button-height: 4rem; /* 64 */
+  --header-height: 6rem; /* 96 */
+  --shadow-card: 0 4px 12px rgba(27, 36, 48, 0.1);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+}
+
+[data-theme='high-contrast'] {
+  --color-bg: #ffffff;
+  --color-border: #1b2430;
+  --color-control-border: #1b2430;
+  --color-text: #000000;
+  --color-text-muted: #1b2430;
+  --color-accent: #0b3a8c;
+  --color-accent-soft: #ffffff;
+  --color-accent-line: #0b3a8c;
+  --color-success: #0b5a2e;
+  --color-success-soft: #ffffff;
+  --color-notice-soft: #ffffff;
+  --color-notice-line: #8a5a00;
+  --color-warm: #8a3c00;
+  --color-pad-red: #9e2a16;
+  --color-pad-blue: #0b3a8c;
+  --color-pad-green: #0b5a2e;
+  --color-pad-yellow: #b07a00;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font: var(--text-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 4px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
